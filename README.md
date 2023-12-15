@@ -27,7 +27,7 @@ Escolhemos o [Vite](https://vitejs.dev/) porque é muito semelhante à estrutura
 - ⛑ Vite
 - 📏 ESLint
 - 💖 Prettier
-- 🖌 Tailwind
+- 🖌 [Tailwind](https://tailwindcss.com/)
 - 🧪 Vitest e React Testing Library
 
 # Organização de Pastas e Arquivos
