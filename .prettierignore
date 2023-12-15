@@ -1,0 +1,4 @@
+node_modules
+dist
+tailwind.config.ts
+server.js
