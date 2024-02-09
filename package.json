@@ -1,14 +1,15 @@
 {
   "name": "pdf-front-validator",
   "description": "This library was created to validate real type of a document PDF on front-end.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "scripts": {
     "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/patrickgratao/pdf-validator"
+    "url": "https://github.com/patrickgratao/pdf-front-validator"
   },
+  "homepage": "https://pdf-front-validator.vercel.app/",
   "keywords": ["frontend pdf", "pdf validate", "pdf validator", "pdf front", "react pdf"],
   "author": "Patrick Gratão",
   "license": "UNLICENSED",
