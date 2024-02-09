@@ -2,15 +2,24 @@
   "name": "pdf-validator",
   "description": "This library was created to validate real type of a document PDF on front-end.",
   "version": "0.1.0",
-  "private": true,
-  "type": "module",
   "scripts": {
-    "build": "tsc && vite build"
+    "build": "tsc"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickgratao/pdf-validator"
   },
+  "keywords": ["frontend pdf", "pdf validate", "pdf validator", "pdf front", "react pdf"],
+  "author": "Patrick Gratão",
+  "license": "UNLICENSED",
+
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",

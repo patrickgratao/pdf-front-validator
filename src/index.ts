@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 // Function to convert bytes to a hexadecimal string
 const bytesToHex = (bytes: Iterable<unknown> | ArrayLike<unknown>) => {
   return Array.from(bytes)
