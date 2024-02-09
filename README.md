@@ -9,7 +9,7 @@
 
 # Overview
 
-The PDFValidator library is a tool that simplifies the process of validating PDF files when developing front-end interfaces. 
+The PDF Front Validator library is a tool that simplifies the process of validating PDF files when developing front-end interfaces. 
 
 Use the main function to validate whether a file is in fact a PDF or whether it has been renamed with the pdf extension.
 
@@ -25,12 +25,12 @@ Use the main function to validate whether a file is in fact a PDF or whether it 
 
 NPM:
 ```bash
-npm install pdf-validator
+npm i pdf-front-validator
 ```
 
 Yarn
 ```bash
-yarn add pdf-validator
+yarn add pdf-front-validator
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ React example
 
 ```javascript
 
-import { validateFilePDF } from 'pdf-validator'
+import { validateFilePDF } from 'pdf-front-validator'
 
 function App() {
   const selectedFile = e.target.files[0]

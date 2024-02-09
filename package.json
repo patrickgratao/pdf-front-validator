@@ -1,5 +1,5 @@
 {
-  "name": "pdf-validator",
+  "name": "pdf-front-validator",
   "description": "This library was created to validate real type of a document PDF on front-end.",
   "version": "0.1.0",
   "scripts": {
