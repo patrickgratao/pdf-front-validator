@@ -1,78 +1,67 @@
 <h1 align="center">
     <img alt="brainz group" src="https://brainz.group/wp-content/themes/brainz-group/assets/BrainzGroupLogo.svg" width="300" />
     <br>
-    Boilerplate de Front-end com Vite - Brainz Group
+    PDF Front-end Validator
 </h1>
 <br/>
 <p align="center">
-  <a href="#visão-geral">Visão geral</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#organização-de-pastas-e-arquivos">Organização de pastas e arquivos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#como-instalar?">Como instalar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#overview">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#how-to-install?">How to install?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-# Visão Geral
+# Overview
 
-Este boilerplate é escrito em Vite e serve para iniciar outros projetos de front-end dentro da Brainz.
+The PDFValidator library is a tool that simplifies the process of validating PDF files when developing front-end interfaces. 
 
-O CRA (Create React App) foi descontinuado pela equipe do React por estar desatualizado, baixa performance, muito restrito a novas funcionalidades como SSR e testes. 
+Use the main function to validate whether a file is in fact a PDF or whether it has been renamed with the pdf extension.
 
-Como alternativa dada pela equipe do React temos o Vite.
-
-Escolhemos o [Vite](https://vitejs.dev/) porque é muito semelhante à estrutura que utilizávamos anteriormente, porém possui um build em dev e prod muito rápido e possibilida maior cobertura de testes.
-
-## Tecnologias utilizadas
+## Technology
 
 - ⚛️ React 18
 - ⛑ TypeScript
 - ⛑ Vite
 - 📏 ESLint
 - 💖 Prettier
-- 🖌 [Tailwind](https://tailwindcss.com/)
-- 🧪 Vitest e React Testing Library
 
-# Organização de Pastas e Arquivos
+# How to install?
 
-## Pasta `public`
+NPM:
+```bash
+npm install pdf-validator
+```
 
-Esta pasta contém os arquivos de públicos do app e também logo e favicon.
+Yarn
+```bash
+yarn add pdf-validator
+```
 
-## Pasta `src`
+## Usage
 
-Esta pasta contém os arquivos que utilizaremos no dia a dia da aplicação.
+React example
 
-### Subpasta `src/components`
+```javascript
 
-Nesta subpasta estarão presentes os arquivos de componentes da aplicação.
+import { validateFilePDF } from 'pdf-validator'
 
-### Subpasta `src/pages`
+function App() {
+  const selectedFile = e.target.files[0]
 
-Dentro desta pasta estão as páginas da aplicação.
+    validateFilePDF(selectedFile)
+    .then((result) => {
+      if (result !== undefined) {
+        // It's a PDF file
+      } else {
+        // It's not a PDF file
+      }
+    })
+    .catch((error) => {
+      console.error("Error to validate PDF File. ln: 58 Error => ", error);
+      return;
+    });
+}
 
-Que deverão ser instanciadas no arquivo Routes.tsx
-
-### Subpasta `src/styles`
-
-Nesta subpasta estarão presentes os arquivos de estilo.
-
-# Como instalar?
-
-## Requisitos Mínimos
-
-1. Necessário ter no mínimo o npm `9.5`
-2. Necessário ter no mínimo o node `18.14.x`
-
-## Instalação
-
-1.  Baixe ou clone este repositório
-2.  Acesse a pasta baixada e instale as dependências com `npm install` ou `yarn install`
-3.  Rode o comando `npm run dev`
-
-Após rodar o comando de `run` será aberto uma janela com a url `localhost:3000`.
-
-## Rodar os Testes
-
-1.  Rode o comando `npm run test`
+```
 
 ---
 
-Feito com 💗 pelo [Time de Produto - Brainz Group](https://brainz.group/)
+Made with 💗 by [Patrick Gratão](https://www.linkedin.com/in/patrickgratao/) 
