@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // Function to convert bytes to a hexadecimal string
-function bytesToHex(bytes: Iterable<unknown> | ArrayLike<unknown>) {
+const bytesToHex = (bytes: Iterable<unknown> | ArrayLike<unknown>) => {
   return Array.from(bytes)
     .map((byte: any) => ("0" + byte.toString(16)).slice(-2))
     .join("");
-}
+};
 
 export const validateFilePDF = (file: any) => {
   const maxiSizeToVerify = 4;

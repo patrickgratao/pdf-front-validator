@@ -1,18 +1,11 @@
 {
   "name": "pdf-validator",
-  "description": "This library was created to validate real type of a document PDF.",
+  "description": "This library was created to validate real type of a document PDF on front-end.",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
-    "lint": "eslint src --max-warnings=0",
-    "typecheck": "tsc --project tsconfig.json --noEmit",
-    "prettier": "prettier --write ./src"
+    "build": "tsc && vite build"
   },
   "dependencies": {
     "react": "^18.2.0",
