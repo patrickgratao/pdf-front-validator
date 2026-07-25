@@ -3,15 +3,15 @@
 </h1>
 <br/>
 <p align="center">
-  <a href="#overview">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#PDF Front Validator">PDF Front Validator</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#install">Install</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-# Overview
+# PDF Front Validator
 
-The PDF Front Validator library is a tool that simplifies the process of validating PDF files when developing front-end interfaces. 
+A lightweight TypeScript library for inspecting PDF file signatures in the browser and detecting files that were renamed with a `.pdf` extension.
 
-Use the main function to validate whether a file is in fact a PDF or whether it has been renamed with the pdf extension.
+> Client-side file validation improves user feedback but does not replace server-side validation, malware scanning, or security controls.
 
 ## Technology
 
